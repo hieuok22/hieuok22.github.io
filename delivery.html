@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="a.css">
+	<link rel="icon" href="img/Logo1.png" type="img/x-icon">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="bootstrap/css/bootstrap.bundle.js"></script>
+	<title>HAN-SHOP</title>
+
+</head>
+<header>
+	<div class="res"
+	<div class="logo">
+		<img src="img/logo.png">
+	</div>
+	<div class="menubox">
+		<li><a href="http://127.0.0.1:5500/BWD/BDW.html">TRANG CHỦ</a></li>
+		<li><a href="http://127.0.0.1:5500/BWD/cartegory.html">ÁO</a>
+			<ul class= "sub-menu">
+				<a id="tin" href="">NỮ</a>
+					<ul>
+						<li><a href="">HÀNG NỮ MỚI VỀ</a></li>
+						<li><a href="">VÁY</a></li>
+						<li><a href="">ĐẦM</a></li>
+						<li><a href="">QUẦN TÂY</a></li>					
+					</ul>
+				</li>
+				<a id="tin" href="">NAM</a>
+					<ul>
+						<li><a href="">HÀNG NAM MỚI VỀ</a></li>
+						<li><a href="">ÁO POLO</a></li>
+						<li><a href="">ÁO SƠ MI</a></li>
+						<li><a href="">ÁO PHÔNG</a></li>
+					</ul>
+				</li>
+					<li><a href="">Quần</a>
+					
+				</li>
+			</ul>
+	</li>
+		<li><a href="">QUẦN</a></li>
+		<li><a href="">GIÀY</a></li>
+		<li><a href="">DÉP</a></li>
+		<li><a href="">KHẨU TRANG</a></li>
+		<li><a href="">MŨ</a></li>
+		<li><a href="">TRANG SỨC</a></li>
+		<li><a href="">TÚI SÁCH</a></li>
+		
+	</div>
+	<div class="others">
+		<li><input onkeyup="myFunction()" id="timkiem" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+		<li> <a he class="fa-solid fa-headset" href="" ></a></li>	
+		<li> <a class="fa-solid fa-cart-shopping" href="" ></a></li>
+		<li> <a class="fa fa-user" href="" ></a></li>
+	</div>
+</div>
+<script>
+    //js scroll cho header
+	const header = document.querySelector("header")
+window.addEventListener("scroll", function(){
+	x = window.pageYOffset
+	if(x>0) {
+		header.classList.add("sticky")
+	}
+	else
+	    header.classList.remove("sticky")
+})
+</script>
+</header>
+<!-- ---------------payment-delivery----------------   -->
+<section class="delivery">
+    <div class="container">
+        <div class="delivery-top-wrap">
+			<div class="delivery-top">
+				<div class="cart-top-delivery delivery-top-item">
+					<i class="fas fa-shopping-cart "></i>
+				</div>
+				<div class="delivery-top-address delivery-top-item">
+					<i style="color: #0DB7EA;" class="fa-solid fa-location-dot"></i>
+				</div>
+				<div class="cart-top-payment delivery-top-item">
+					<i class="fas fa-money-check-alt "></i>
+				</div>
+			</div>
+		</div>        
+    </div>
+    <div class="container">
+        <div class="delivery-content row">
+            <div class="delivery-content-left">
+                <p>Vui lòng chọn địa chỉ giao hàng</p>
+                <div class="delivery-content-left-login row">
+                    <i class="fa fa-sign-in-alt"> </i>
+                        <p> &nbsp;&nbsp;Đăng nhập (Nếu bạn đã có tài khoản HAN-SHOP)</p>
+                </div>
+                <div class="delivery-content-left-khachle row">
+                    <input checked name="loaikhach" type="radio">
+                    <p><span style="font-weight: bold;">Khách lẻ</span> (Nếu bạn không muốn lưu lại thông tin)</p>
+                </div>
+                <div class="delivery-content-left-dangky row">
+                    <input name="loaikhach" type="radio">
+                    <p><span style="font-weight: bold;">Đăng ký</span> (Tạo tài khoản mới với thông tin bên dưới)</p>
+                </div>
+                <div class="delivery-content-left-input-top row">
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Họ tên<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Điện thoại<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Tỉnh/TP<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Quận/Huyện<span style="color: red">*</span></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="delivery-content-left-input-top-bottom">
+                    <label for="">Địa chỉ<span style="color: red">*</span></label>
+                    <input type="text">
+                </div>
+                
+                <div class="delivery-content-left-button row">
+                    <a href=""><span>&#171</span><p>Quay lại giỏ hàng</p></a>
+                  <a href="http://127.0.0.1:5500/BWD/payments.html">
+                    <button><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button></a>
+                </div> 
+            </div>
+
+            <div class="delivery-content-right">
+                <table>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Giảm giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                        <td>Áo 2 Dây Buộc Lệch</td>
+                        <td>-30%</td>
+                        <td>1</td>
+                        <td><p>600.000<sup>đ</sup></p></td>
+                    </tr>
+                        <tr>
+                            <td>Đầm Thun</td>
+                            <td>-15%</td>
+                            <td>1</td>
+                            <td><p>1.390.000<sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng</td>
+                            <td style="font-weight: bold;"><p>1.800.000<sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Thuê VAT</td>
+                            <td style="font-weight: bold;"><p>200.000<sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
+                            <td style="font-weight: bold;"><p>2.000.000<sup>đ</sup></p></td>              
+                    </tr>
+                </table>
+            </div>
+        </div>
+</section>
+
+<!-- ---------------dowload----------------   -->
+<div class="app-container">
+    <p>Tải ứng dụng HAN-SHOP</p>
+    <div class="app-google">
+        <img src="img/appstore.png">
+        <img src="img/googleplay.png">
+    </div>
+    <p>Nhận bản tin HAN-SHOP</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</div>
+<!-- ------------------------footer------------------------->
+<div class="footer-top">
+<li><a href=""><img src="img/img-congthuong.png" alt=""></a></li>
+<li><a href=""></a>Liên Hệ</li>
+<li><a href=""></a>Tuyển dụng</li>
+<li><a href=""></a>Giới thiệu</li>
+
+<li>
+    <a style="color: #0b84ed;" href="" class="fab fa-facebook-f"></a>
+    <a style="color: #1e9bf0;" href="" class="fab fa-twitter"></a>
+    <a style="color: #ff0f17;" href="" class="fab fa-youtube"></a>
+</li>
+</div>
+<div class="footer-center">
+Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 1011029381 <br>
+<strong>Địa chỉ đăng ký:</strong> Trần Địa Nghĩa, Ngũ Hành Sơn, Đà Nẵng, Việt Nam <br>
+<strong>Số điện thoại:</strong> 0399.824.061
+<p>
+</div>
+<div class="footer-bottom">
+<table bgcolor="#e3e3f2">
+<!-- được sử dụng để di chuyển chữ hoặc ảnh theo chiều ngang hoặc dọc một cách tự động. -->
+    <Marquee 
+    Behavior="scroll"  Direction=""
+    Loop=n1  		    ScrollAmount=n2 
+    ScrollDelay=n3		BgColor="#e3e3f2"> 
+    <strong>©HAN-SHOP All rights reserved</strong>
+</Marqueee>
+</table>
+</div>
+<script>
+	//--------------------product---------------------------
+const bigImg = document.querySelector(".product-content-left-big-img img")
+const smalImg = document.querySelectorAll(".product-content-left-small-img img")
+smalImg.forEach(function(imgItem,X) {
+	imgItem.addEventListener("click",function(){
+		bigImg.src = imgItem.src
+	})
+})
+
+	const baoquan = document.querySelector(".baoquan")
+	const chitiet = document.querySelector(".chitiet")
+	if(baoquan){
+		baoquan.addEventListener("click", function(){
+			document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "none"
+			document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "block"
+		})
+	}
+	if(chitiet){
+		chitiet.addEventListener("click", function(){
+			document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "block"
+			document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "none"
+		})
+	}
+	const button = document.querySelector(".product-content-right-bottom-top")
+	if(button) {
+		button.addEventListener("click", function(){
+			document.querySelector(".product-content-right-bottom-content-big").classList.toggle("active")
+			
+		})
+	}
+</script>
+<script src="js/Slider.js"></script>

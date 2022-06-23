@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="login.css">
+	<link rel="icon" href="img/Logo1.png" type="img/x-icon">
+
+	<title>HAN-SHOP</title>
+</head>
+<body>
+	<div class="container">
+		<div class="login">Form Login</div>
+		
+		<form>
+			<div class="input-field">
+			<input type="text" id="text1" required>
+				<label>Email hoặc Username</label>
+			</div>
+			<div class="input-field">
+				<input id="text2" class="pswrd" type="password" required>
+				<span class="show">SHOW</span>
+				<label>Mật khẩu</label>
+			</div>
+			<div class="button">
+				<div class="inner">
+				</div>
+				<a href=""><button  onclick="javascript:onfor()"  id="bt">Đăng Nhập</button></a>
+			</div>
+		</form>
+
+		<div class="auth">
+		Hoặc đăng nhập với</div>
+		<div class="links">
+			<div class="facebook">
+				<i class="fab fa-facebook-square"><span>Facebook</span></i>
+			</div>
+			<div class="google">
+				<i class="fab fa-google-plus-square"><span>Google</span></i>
+			</div>
+		</div>
+		<div class="signup">
+			Không phải thành viên? <a href="http://127.0.0.1:5500/BWD/sigup.html">Đăng ký ngay</a>
+		</div>
+	</div>	
+
+<script type="text/javascript">
+	var input = document.querySelector('.pswrd');
+	var show = document.querySelector('.show');
+	show.addEventListener('click', active);
+
+	function active(){
+	  if(input.type === "password"){
+		input.type = "text";
+		show.style.color = "#1DA1F2";
+		show.textContent = "HIDE";
+	  }else{
+		input.type = "password";
+		show.textContent = "SHOW";
+		show.style.color = "#111";
+	  }
+	}
+</script>
+
+</body>
+<script type="text/javascript">
+	
+	////check us and pw
+function onfor() {
+	var USERNAME = 'lehieu';
+	var PASSWORD = '123';
+
+	var us = document.getElementById("text1").value;
+	var pw = document.getElementById("text2").value;
+
+	if(us == USERNAME && pw == PASSWORD) {
+		location.href="http://127.0.0.1:5500/BWD/BDW.html";
+		alert("Đăng Nhập Thành Công!");
+	} else {
+		alert( "Sai Tài Khoản Hoặc Mật Khẩu!" );
+	}
+}
+ </script>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="a.css">
+	<link rel="icon" href="img/Logo1.png" type="img/x-icon">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="bootstrap/css/bootstrap.bundle.js"></script>
+	<title>HAN-SHOP</title>
+
+</head>
+<header>
+	<div class="res"
+	<div class="logo">
+		<img src="img/logo.png">
+	</div>
+	<div class="menubox">
+		<li><a href="http://127.0.0.1:5500/BWD/BDW.html">TRANG CHỦ</a></li>
+		<li><a href="http://127.0.0.1:5500/BWD/cartegory.html">ÁO</a>
+			<ul class= "sub-menu">
+				<a id="tin" href="">NỮ</a>
+					<ul>
+						<li><a href="">HÀNG NỮ MỚI VỀ</a></li>
+						<li><a href="">VÁY</a></li>
+						<li><a href="">ĐẦM</a></li>
+						<li><a href="">QUẦN TÂY</a></li>					
+					</ul>
+				</li>
+				<a id="tin" href="">NAM</a>
+					<ul>
+						<li><a href="">HÀNG NAM MỚI VỀ</a></li>
+						<li><a href="">ÁO POLO</a></li>
+						<li><a href="">ÁO SƠ MI</a></li>
+						<li><a href="">ÁO PHÔNG</a></li>
+					</ul>
+				</li>
+					<li><a href="">Quần</a>
+					
+				</li>
+			</ul>
+	</li>
+		<li><a href="">QUẦN</a></li>
+		<li><a href="">GIÀY</a></li>
+		<li><a href="">DÉP</a></li>
+		<li><a href="">KHẨU TRANG</a></li>
+		<li><a href="">MŨ</a></li>
+		<li><a href="">TRANG SỨC</a></li>
+		<li><a href="">TÚI SÁCH</a></li>
+		
+	</div>
+	<div class="others">
+		<li><input onkeyup="myFunction()" id="timkiem" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+		<li> <a he class="fa-solid fa-headset" href="" ></a></li>	
+		<li> <a class="fa-solid fa-cart-shopping" href="" ></a></li>
+		<li> <a class="fa fa-user" href="" ></a></li>
+	</div>
+</div>
+<script>
+    //js scroll cho header
+	const header = document.querySelector("header")
+window.addEventListener("scroll", function(){
+	x = window.pageYOffset
+	if(x>0) {
+		header.classList.add("sticky")
+	}
+	else
+	    header.classList.remove("sticky")
+})
+</script>
+</header>
+<!-- ---------------payment----------------   -->
+<section class="payment">
+    <div class="container">
+        <div class="payment-top-wrap">
+			<div class="payment-top">
+				<div class="payment-top-cart payment-top-item">
+					<i class="fas fa-shopping-cart "></i>
+				</div>
+				<div class="payment-top-address payment-top-item">
+					<i class="fas fa-map-marker-alt"></i>
+				</div>
+				<div class="payment-top-payment payment-top-item">
+					<i class="fas fa-money-check-alt "></i>
+				</div>
+			</div>
+		</div>       
+    </div>
+    <div class="container">
+        <div class="payment-content row">
+            <div class="payment-content-left">
+                <div class="payment-content-left-method-delivery">
+                    <p style="font-weight: bold;">Phương thức giao hàng</p>
+                    <div class="payment-content-left-method-delivery-item">
+                        <input type="radio">
+                        <label for="">Giao hàng chuyển phát nhanh</label>
+                    </div>
+                </div>
+                <div class="payment-content-left-method-payment">
+                    <p>Phương thức thanh toán</p>
+                    <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thể tín dụng sẽ không bao giờ lưu lại</p>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ tín dụng(OnePay)</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="img/visa.png" alt="">
+                    </div>
+                </div>
+                <div class="payment-content-left-method-payment-item">
+                    <input name="method-payment" type="radio">
+                    <label for="">Thanh toán bằng thẻ ATM(OnePay)</label>
+                </div>
+                <div class="payment-content-left-method-payment-item-img">
+                    <img src="img/atm.png" alt="">
+                </div>
+				<div class="payment-content-left-method-payment-item">
+					<input name="method-payment" type="radio">
+					<label for="">Thanh toán bằng Momo</label>
+				</div>
+				<div class="payment-content-left-method-payment-item-img">
+					<img src="img/momo.png" alt="">
+				</div>
+				<div class="payment-content-left-method-payment-item">
+					<input name="method-payment" type="radio">
+					<label for="">Thanh toán tận nơi</label>
+				</div>
+            </div>	
+            <div class="payment-content-right">
+				<div class="payment-content-right-button">
+					<input type="text" placeholder="Mã giảm giá/Quà tặng">
+					<button><i class="fa fa-check"></i></button>
+				</div>
+				<div class="payment-content-right-button">
+					<input type="text" placeholder="Mã cộng tác viên">
+					<button><i class="fa fa-check"></i></button>
+				</div>
+				<div class="payment-content-right-mnv">
+					<select name="" id="">
+						<option value="">Chọn mã nhân viên thân thiết</option>
+						<option value="">A345</option>
+						<option value="">B345</option>
+						<option value="">C395</option>
+						<option value="">D341</option>
+					</select>
+				</div>
+            </div>
+        </div>
+		<div class="payment-content-right-payment">
+			<button>TIẾP TỤC THANH TOÁN</button>
+		</div>
+    </div>
+</section>
+
+<!-- ---------------dowload----------------   -->
+<div class="app-container">
+	<p>Tải ứng dụng HAN-SHOP</p>
+	<div class="app-google">
+		<img src="img/appstore.png">
+		<img src="img/googleplay.png">
+	</div>
+	<p>Nhận bản tin HAN-SHOP</p>
+	<input type="text" placeholder="Nhập email của bạn...">
+</div>
+<!-- ------------------------footer------------------------->
+<div class="footer-top">
+<li><a href=""><img src="img/img-congthuong.png" alt=""></a></li>
+<li><a href=""></a>Liên Hệ</li>
+<li><a href=""></a>Tuyển dụng</li>
+<li><a href=""></a>Giới thiệu</li>
+
+<li>
+	<a style="color: #0b84ed;" href="" class="fab fa-facebook-f"></a>
+	<a style="color: #1e9bf0;" href="" class="fab fa-twitter"></a>
+	<a style="color: #ff0f17;" href="" class="fab fa-youtube"></a>
+</li>
+</div>
+<div class="footer-center">
+Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 1011029381 <br>
+<strong>Địa chỉ đăng ký:</strong> Trần Địa Nghĩa, Ngũ Hành Sơn, Đà Nẵng, Việt Nam <br>
+<strong>Số điện thoại:</strong> 0399.824.061
+<p>
+</div>
+<div class="footer-bottom">
+<table bgcolor="#e3e3f2">
+<!-- được sử dụng để di chuyển chữ hoặc ảnh theo chiều ngang hoặc dọc một cách tự động. -->
+	<Marquee 
+	Behavior="scroll"  Direction=""
+	Loop=n1  		    ScrollAmount=n2 
+	ScrollDelay=n3		BgColor="#e3e3f2"> 
+	<strong>©HAN-SHOP All rights reserved</strong>
+</Marqueee>
+</table>
+</div>
+
+<script>
+	//--------------------product---------------------------
+const bigImg = document.querySelector(".product-content-left-big-img img")
+const smalImg = document.querySelectorAll(".product-content-left-small-img img")
+smalImg.forEach(function(imgItem,X) {
+	imgItem.addEventListener("click",function(){
+		bigImg.src = imgItem.src
+	})
+})
+
+	const baoquan = document.querySelector(".baoquan")
+	const chitiet = document.querySelector(".chitiet")
+	if(baoquan){
+		baoquan.addEventListener("click", function(){
+			document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "none"
+			document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "block"
+		})
+	}
+	if(chitiet){
+		chitiet.addEventListener("click", function(){
+			document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "block"
+			document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "none"
+		})
+	}
+	const button = document.querySelector(".product-content-right-bottom-top")
+	if(button) {
+		button.addEventListener("click", function(){
+			document.querySelector(".product-content-right-bottom-content-big").classList.toggle("active")
+			
+		})
+	}
+</script>
+<script src="js/Slider.js"></script>

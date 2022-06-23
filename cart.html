@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<link rel="stylesheet" href="a.css">
+	<link rel="icon" href="img/Logo1.png" type="img/x-icon">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="bootstrap/css/bootstrap.bundle.js"></script>
+	<title>HAN-SHOP</title>
+
+</head>
+<header>
+	<div class="res"
+	<div class="logo">
+		<img src="img/logo.png">
+	</div>
+	<div class="menubox">
+		<li><a href="http://127.0.0.1:5500/BWD/BDW.html">TRANG CHỦ</a></li>
+		<li><a href="http://127.0.0.1:5500/BWD/cartegory.html">ÁO</a>
+			<ul class= "sub-menu">
+				<a id="tin" href="">NỮ</a>
+					<ul>
+						<li><a href="">HÀNG NỮ MỚI VỀ</a></li>
+						<li><a href="">VÁY</a></li>
+						<li><a href="">ĐẦM</a></li>
+						<li><a href="">QUẦN TÂY</a></li>					
+					</ul>
+				</li>
+				<a id="tin" href="">NAM</a>
+					<ul>
+						<li><a href="">HÀNG NAM MỚI VỀ</a></li>
+						<li><a href="">ÁO POLO</a></li>
+						<li><a href="">ÁO SƠ MI</a></li>
+						<li><a href="">ÁO PHÔNG</a></li>
+					</ul>
+				</li>
+					<li><a href="">Quần</a>
+					
+				</li>
+			</ul>
+	</li>
+		<li><a href="">QUẦN</a></li>
+		<li><a href="">GIÀY</a></li>
+		<li><a href="">DÉP</a></li>
+		<li><a href="">KHẨU TRANG</a></li>
+		<li><a href="">MŨ</a></li>
+		<li><a href="">TRANG SỨC</a></li>
+		<li><a href="">TÚI SÁCH</a></li>
+		
+	</div>
+	<div class="others">
+		<li><input onkeyup="myFunction()" id="timkiem" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+		<li> <a he class="fa-solid fa-headset" href="" ></a></li>	
+		<li> <a class="fa-solid fa-cart-shopping" href="" ></a></li>
+		<li> <a class="fa fa-user" href="" ></a></li>
+	</div>
+</div>
+<script>
+	
+	//js scroll cho header
+	const header = document.querySelector("header")
+window.addEventListener("scroll", function(){
+	x = window.pageYOffset
+	if(x>0) {
+		header.classList.add("sticky")
+	}
+	else
+	    header.classList.remove("sticky")
+})
+</script>
+</header>
+<!-- ---------------cart----------------   -->
+<section class="cart">
+    <div class="container">
+        <div class="cart-top-wrap">
+			<div class="cart-top">
+				<div class="cart-top-cart cart-top-item">
+					<i class="fas fa-shopping-cart "></i>
+				</div>
+				<div class="cart-top-address cart-top-item">
+					<i class="fas fa-map-marker-alt"></i>
+				</div>
+				<div class="cart-top-payment cart-top-item">
+					<i class="fas fa-money-check-alt "></i>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="container">
+        <div class="cart-content row">
+            <div class="cart-content-left">
+                <table>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Màu</th>
+                        <th>Size</th>
+                        <th>Số Lượng</th>
+                        <th>Thành Tiền</th>
+						<th>Hủy</th>
+                    </tr>
+                    <tr>
+                        <td><img src="img/sp11 (1).jpg" alt=""></td>
+                        <td><p>Áo 2 Dây Buộc Lệch</p></td>
+                        <td><img style="border-radius: 5px;" src="img/spcolor.png" alt=""></td>                     
+                        <td><p>L</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>790.000<sub>đ</sub></p></td>
+                        <td><span>X</span></td>
+                    </tr>
+					<tr>
+                        <td><img src="img/sp11 (2).jpg" alt=""></td>
+                        <td><p>Đầm thun</p></td>
+                        <td><img style="border-radius: 5px;" src="img/spcolor.png" alt=""></td>                     
+                        <td><p>L</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>1.490.000 đ</p></td>
+                        <td><span>X</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart-content-right">
+                <table>
+                    <tr>
+                        <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                    </tr>
+                    <tr>
+                        <td>TỔNG SẢN PHẨM</td>
+                        <td>2</td>
+                    </tr>
+					<tr>
+						<td>TỔNG TIỀN HÀNG</td>
+						<td><p>2.280.000<sup>đ</sup></p></td>
+					</tr>
+					<tr>
+						<td>TẠM TÍNH</td>
+						<td><p style="color: black; font-weight: bold;">2,280,000<sup>đ</sup></p></td>
+					</tr>
+                </table>
+				<div class="cart-content-right-text">
+					<p>Bạn sẽ được miễn phí ship khi đơn hàng của bạn có tổng trị giá trên 3.000.000 đ</p>
+					<p style="color: rgb(255, 0, 0); font-weight: bold;">Mua thêm <span style="font-size: 18px;">720.0000đ</span> để được miễn phí Ship</p>
+				</div>
+				<div class="cart-content-right-button">
+					<button>TIẾP TỤC MUA SẮM</button>
+					<a href="http://127.0.0.1:5500/BWD/delivery.html"><button>THANH TOÁN</button></a>
+				</div>
+				<div class="cart-content-right-dangnhap">
+					<p style="font-size: 14px">TÀI KHOẢN HAN-SHOP</p><br>
+					<p style="font-size: 14px">HÃY <a style="color: rgb(255, 0, 0);" href="">Đăng nhập</a> tài khoản của bạn để tích điểm thành viên</p>
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ---------------dowload----------------   -->
+<div class="app-container">
+	<p>Tải ứng dụng HAN-SHOP</p>
+	<div class="app-google">
+		<img src="img/appstore.png">
+		<img src="img/googleplay.png">
+	</div>
+	<p>Nhận bản tin HAN-SHOP</p>
+	<input type="text" placeholder="Nhập email của bạn...">
+</div>
+<!-- ------------------------footer------------------------->
+<div class="footer-top">
+<li><a href=""><img src="img/img-congthuong.png" alt=""></a></li>
+<li><a href=""></a>Liên Hệ</li>
+<li><a href=""></a>Tuyển dụng</li>
+<li><a href=""></a>Giới thiệu</li>
+
+<li>
+	<a style="color: #0b84ed;" href="" class="fab fa-facebook-f"></a>
+	<a style="color: #1e9bf0;" href="" class="fab fa-twitter"></a>
+	<a style="color: #ff0f17;" href="" class="fab fa-youtube"></a>
+</li>
+</div>
+<div class="footer-center">
+Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 1011029381 <br>
+<strong>Địa chỉ đăng ký:</strong> Trần Địa Nghĩa, Ngũ Hành Sơn, Đà Nẵng, Việt Nam <br>
+<strong>Số điện thoại:</strong> 0399.824.061
+<p>
+</div>
+<div class="footer-bottom">
+<table bgcolor="#e3e3f2">
+<!-- được sử dụng để di chuyển chữ hoặc ảnh theo chiều ngang hoặc dọc một cách tự động. -->
+	<Marquee 
+	Behavior="scroll"  Direction=""
+	Loop=n1  		    ScrollAmount=n2 
+	ScrollDelay=n3		BgColor="#e3e3f2"> 
+	<strong>©HAN-SHOP All rights reserved</strong>
+</Marqueee>
+</table>
+</div>
+
+</script>
